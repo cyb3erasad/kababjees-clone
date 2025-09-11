@@ -1,4 +1,4 @@
 # kababjees-clone
 Just learn HTML and CSS then try to make this resturant app clone.
 Feel free to change and add features.
-New Features coming soon. 😀 🌐
+New Features coming soon. 😀 
