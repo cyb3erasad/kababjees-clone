@@ -1,0 +1,183 @@
+/* ===== Kababjees Restaurant Styling ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #fffdf8;
+    color: #2e2e2e;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b71c1c; /* restaurant red */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffcc80;
+}
+
+/* Hero Section */
+main section:first-child {
+    position: relative;
+    text-align: center;
+}
+
+main section:first-child img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+main section:first-child p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+main section:first-child input {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 400px;
+    padding: 0.9rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Popular Items */
+.Popular {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #fdf6f6;
+}
+
+.Popular h2 {
+    font-size: 2rem;
+    color: #b71c1c;
+    margin-bottom: 0.5rem;
+}
+
+.Popular p {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #b71c1c;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #212121;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -30%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+.starter img{
+    border-radius: 12px;
+    justify-content: center;
+    width: 1165px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
