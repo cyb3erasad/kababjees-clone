@@ -1,4 +1,4 @@
 # kababjees-clone
 Just learn HTML and CSS then try to make this resturant app clone.
 Feel free to change and add features.
-Added new login page. Now adding menu in home page
+Added new login page. Now adding menu in home page.
