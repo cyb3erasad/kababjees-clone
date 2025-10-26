@@ -1,1 +1,1 @@
-# Food resturant website
+# Food resturant wwebsite frontend using HTML, CSS and Javascript.
